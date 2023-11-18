@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.css" rel="stylesheet" />
+
+  <title>{% block title %}{% endblock %} - My Webpage</title>
+</head>
+
+<body>
+  {% include 'navbar.html' %}
+
+  {% block content %}{% endblock %}
+
+  {% include 'footer.html' %}
+
+  <script src="https://unpkg.com/htmx.org@1.9.8"
+    integrity="sha384-rgjA7mptc2ETQqXoYC3/zJvkU7K/aP44Y+z7xQuJiVnB/422P/Ak+F/AqFR7E4Wr"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.1.1/flowbite.min.js"></script>
+  <script>
+    initFlowbite();
+  </script>
+</body>
+
+
+</html>
